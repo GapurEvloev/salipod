@@ -1,0 +1,25 @@
+section.section.section--contest-rules
+    .contest-rules
+        .container
+            .contest-rules__wrap
+                .contest-rules__col.rules
+                    .rule
+                        img(src="static/images/content/contest-rules/1.svg", alt="")
+                        .rule__descr Купи упаковку #[img(src='static/images/general/salipod.svg').rule__descr-icon]
+                    .rule
+                        img(src="static/images/content/contest-rules/2.svg", alt="")
+                        .rule__descr Зарегистрируй чек на сайте
+                    .rule
+                        img(src="static/images/content/contest-rules/3.svg", alt="")
+                        .rule__descr Каждый 7-ой участник получает сертификат Ozon на 1000 рублей
+
+                form(action="").contest-rules__col.reg-form
+                    .reg-form__group
+                        input(type="text" placeholder="Имя").reg-form__input
+                    .reg-form__group
+                        input(type="email" placeholder="E-mail").reg-form__input
+                    .reg-form__group
+                        input(type="file" style='display:none').reg-form__input
+                        label(for="file") загрузить фото чека
+                    .reg-form__group
+                        input(type="submit" value="Отправить").reg-form__input
