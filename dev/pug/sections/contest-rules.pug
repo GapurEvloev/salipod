@@ -4,14 +4,15 @@ section.section.section--contest-rules
             .contest-rules__wrap
                 .contest-rules__col.rules
                     .rule
-                        img(src="static/images/content/contest-rules/1.svg", alt="")
+                        img.rule__img(src="static/images/content/contest-rules/1.svg", alt="")
                         .rule__descr Купи упаковку #[img(src='static/images/general/salipod.svg').rule__descr-icon]
                     .rule
-                        img(src="static/images/content/contest-rules/2.svg", alt="")
-                        .rule__descr Зарегистрируй чек на сайте
+                        img.rule__img(src="static/images/content/contest-rules/2.svg", alt="")
+                        .rule__descr Зарегистрируй чек на&nbsp;сайте
                     .rule
-                        img(src="static/images/content/contest-rules/3.svg", alt="")
-                        .rule__descr Каждый 7-ой участник получает сертификат Ozon на 1000 рублей
+                        img.rule__img(src="static/images/content/contest-rules/3.svg", alt="")
+                        .rule__descr Каждый 7-ой участник получает сертификат Ozon на&nbsp;1000 рублей
+                    
 
                 form(action="").contest-rules__col.reg-form
                     .reg-form__group
@@ -19,7 +20,8 @@ section.section.section--contest-rules
                     .reg-form__group
                         input(type="email" placeholder="E-mail").reg-form__input
                     .reg-form__group
-                        input(type="file" style='display:none').reg-form__input
-                        label(for="file") загрузить фото чека
+                        input(type="file" style='display:none').reg-form__input.reg-form__input--file
+                        label(for="file").btn.reg-form__label.reg-form__label--file загрузить фото чека
                     .reg-form__group
-                        input(type="submit" value="Отправить").reg-form__input
+                        input(type="submit" value="Отправить").btn.reg-form__input.reg-form__input--submit
+                    span.reg-form__rules Учавствуя в конкусе, вы соглашаетесь с&nbsp;#[a.reg-form__rules-link(href="#") правилами конкурса]

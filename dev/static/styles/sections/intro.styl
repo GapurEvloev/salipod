@@ -1,0 +1,88 @@
+.intro
+    position relative
+    z-index 1
+
+    &__head
+        color $title-color
+        text-align center
+        padding 4.5rem 0 3rem
+        margin 0 -2.5rem
+
+    &__title
+        font-family 'RupsterScriptFree'
+        font-size 8.1rem
+        display block
+        font-weight 300
+        line-height 1.4
+        position relative
+        z-index 1
+
+        &:after
+            background-image url(../images/content/intro/title-bg.png)
+            background-size contain
+            background-repeat no-repeat
+            background-position center center
+            content ''
+            height 285%
+            left 50%
+            top 60%
+            position absolute
+            transform translate(-50%, -50%)
+            width 200%
+            z-index -1
+    
+    &__subtitle
+        font-weight 700
+        font-size 3.7rem
+        line-height 1.2
+        z-index 1
+        position relative
+    
+    &__cnt
+        display flex
+    
+    &__girl
+        position absolute
+        height 100%
+        width 100%
+        top 0
+        left 0
+        background-repeat no-repeat, no-repeat
+        background-size contain, 0 0
+        background-position bottom left, bottom center
+        z-index -2
+    
+    &__offer
+        flex 0 0 50%
+        margin-left auto
+
+    &__product
+        display flex
+        flex-direction column
+        align-items center
+        padding 0 2.7rem 0 1.7rem
+        position relative
+        margin-bottom 3rem
+
+        &-img
+            width 100%
+    
+    &__btn
+        position absolute
+        bottom 0
+    
+.sertificate
+    display flex
+    flex-direction column
+    align-items center
+
+    &__img
+        margin-bottom 4rem
+
+    &__text
+        font-size 3.7rem
+        font-weight bold
+        text-align center
+        line-height 1.2
+        padding-left 1rem
+        padding-bottom 3.2rem
