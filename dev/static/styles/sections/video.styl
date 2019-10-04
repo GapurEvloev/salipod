@@ -1,0 +1,37 @@
+.section--video
+    // 
+.video
+    &__link
+        position relative
+
+        &:hover
+            .video__button-icon
+                transform scale(1.05)
+
+    &__button
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        appearance none
+        cursor pointer
+        background-color transparent
+        padding 0
+        margin 0
+        border 0
+    
+        &-icon
+            width 19.5rem
+            transition transform .2s linear
+
+    &__media
+        width 100%
+        height auto
+
+.mfp-wrap
+    .mfp-content
+        max-width unset
+        .mfp-iframe
+            width 100%
+            video:-webkit-full-page-media
+                width 100%

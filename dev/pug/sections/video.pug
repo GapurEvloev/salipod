@@ -1,7 +1,8 @@
 section.section.section--video
-    .container
-        .video
-            a(href="static/images/content/video/silipod.mp4").video__link
-                img(src="static/images/content/video/video.jpg" alt="").video__media
-                button.video__button(type="button" aria-label="Запустить видео")
-                    img.video__button-icon(src="static/images/content/video/play.svg", alt="Запустить видео")
+    .video
+        a(href="static/video/silipod.mp4").video__link
+            picture
+                source(srcset="static/video/salipod-prev.webp" type="image/webp")
+                img(src="static/video/salipod-prev.webp" alt="").video__media
+            button.video__button(type="button" aria-label="Запустить видео")
+                img.video__button-icon(src="static/images/content/video/play.svg", alt="Запустить видео")

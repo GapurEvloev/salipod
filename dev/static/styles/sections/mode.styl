@@ -1,0 +1,28 @@
+.section--mode
+    // 
+
+.mode
+    padding 5rem 0
+    background-color $bgc
+
+    &__wrap
+        display flex
+        flex-wrap wrap
+        justify-content center
+    
+    &-item
+        margin-top 5rem 
+        flex 0 0 calc(50% - 2rem)
+
+        &:nth-child(odd)
+            margin-right 4rem
+
+        &__img
+            display block
+            width auto
+            margin 0 auto
+            max-width 100%
+            margin-bottom 2rem
+        
+        &__descr
+            font-size 2.5rem

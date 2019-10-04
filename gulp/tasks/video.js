@@ -1,6 +1,6 @@
 module.exports = function() {
     $.gulp.task('video:copy', function() {
-        return $.gulp.src('./src/static/**/*.mp4')
-        .pipe($.gulp.dest('./dist/static/video/'));
+        return $.gulp.src('./dev/static/video/**/*.*')
+        .pipe($.gulp.dest('./build/static/video/'));
     });
 };
