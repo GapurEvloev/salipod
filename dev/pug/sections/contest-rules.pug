@@ -1,4 +1,4 @@
-section.section.section--contest-rules
+section.section.section--contest-rules.wow.slideInLeft(data-wow-duration=".5s" data-wow-delay=".3s")
     .contest-rules
         .container
             .contest-rules__wrap
@@ -12,6 +12,19 @@ section.section.section--contest-rules
                     .rule
                         img.rule__img(src="static/images/content/contest-rules/3.svg", alt="")
                         .rule__descr Каждый 7-ой участник получает сертификат Ozon на&nbsp;1000 рублей
+                    //- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.45 376.75">
+                    //-     <title>line</title>
+                    //-     <g id="Слой_2" data-name="Слой 2">
+                    //-         <g id="Слой_1-2" data-name="Слой 1">
+                    //-             <path d="M61.23.4C-18.08,61.61-23,125.78,66.06,190.47c82.29,52,78.14,114.17,5.79,185.93" style="fill:none;stroke:#fff;stroke-miterlimit:10"/>
+                    //-         </g>
+                    //-     </g>
+                    //- </svg>
+                    .rules__mask
+                        <svg version="1.1" id="rules-line" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 130 380" style="enable-background:new 0 0 130 380;" xml:space="preserve">
+                            //- 
+                            <path class="rules-line__path" d="M62.6,2c-79.3,61.2-84.2,125.4,4.8,190.1c82.3,52,78.1,114.2,5.8,185.9"/>
+                        </svg>
                     
 
                 form(action="").contest-rules__col.reg-form
@@ -20,7 +33,7 @@ section.section.section--contest-rules
                     .reg-form__group
                         input(type="email" placeholder="E-mail").reg-form__input
                     .reg-form__group
-                        input(type="file" style='display:none').reg-form__input.reg-form__input--file
+                        input(type="file")#file.reg-form__input.reg-form__input--file
                         label(for="file").btn.reg-form__label.reg-form__label--file загрузить фото чека
                     .reg-form__group
                         input(type="submit" value="Отправить").btn.reg-form__input.reg-form__input--submit

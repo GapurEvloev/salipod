@@ -2,7 +2,9 @@
     // 
 
 .how
-    // 
+    @media(min-width $grid-xxl)
+        margin-bottom 9rem
+
 .indent
     padding 4rem 0 6rem
     font-size 2.5rem
@@ -19,3 +21,22 @@
     &__paragraph
         &:not(:last-child)
             margin-bottom 2.8rem
+    
+    @media(min-width $grid-xxl)
+        display flex
+        align-items center
+        padding-bottom 0
+
+        &__img
+            &-wrap
+                flex 0 0 55rem
+                padding 0
+                margin-right 12rem
+
+        &:nth-child(odd)
+            flex-direction row-reverse
+
+            .indent__img-wrap
+                margin-top -4rem
+                margin-right 0
+                margin-left 10rem

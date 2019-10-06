@@ -9,8 +9,9 @@ module.exports = function () {
     $.gulp.task('libsJS:dev', () => {
         return $.gulp.src([
                 'node_modules/jquery/dist/jquery.min.js',
-                // 'node_modules/owl.carousel/dist/owl.carousel.min.js',
+                'node_modules/wow.js/dist/wow.min.js',
                 'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
+                // 'dev/static/tingle/tingle.min.js',
                 'node_modules/svg4everybody/dist/svg4everybody.min.js'
             ])
             .pipe(concat('libs.min.js'))
@@ -20,8 +21,9 @@ module.exports = function () {
     $.gulp.task('libsJS:build', () => {
         return $.gulp.src([
                 'node_modules/jquery/dist/jquery.min.js',
-                // 'node_modules/owl.carousel/dist/owl.carousel.min.js',
+                'node_modules/wow.js/dist/wow.min.js',
                 'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
+                // 'dev/static/tingle/tingle.min.js',
                 'node_modules/svg4everybody/dist/svg4everybody.min.js'
             ])
             .pipe(concat('libs.min.js'))
