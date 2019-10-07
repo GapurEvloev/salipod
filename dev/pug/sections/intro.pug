@@ -2,14 +2,17 @@ section.section.section--intro
     .intro
         .container.container--intro.wow.slideInLeft(data-wow-duration=".5s")
             .intro__head
-                h1.intro__title Удача у&nbsp;ваших ног
+                h1.intro__title 
+                    //- |Удача у&nbsp;ваших ног
+                    img(src="static/images/content/intro/title.svg", alt="").intro__title-img
                 h3.intro__subtitle Позаботьтесь о&nbsp;красоте ваших ног и&nbsp;выигрывайте призы! 
         .container.container--intro
             .intro__cnt
                 .intro__girl(style="background-image: url('/static/images/content/intro/girl-mob.png'), linear-gradient(to top, #d3c4c8, #d3c4c8, #d3c4c8, #d2c3c7, #d2c3c7);")
                 .intro__offer
                     .intro__product.wow.slideInRight(data-wow-duration=".5s" data-wow-delay=".1s")
-                        img(src="static/images/content/intro/product-img.png", alt="").intro__product-img
+                        a(href="#").intro__product-link 
+                            img(src="static/images/content/intro/product-img.png", alt="").intro__product-img
                         a.btn.intro__btn(href="#") КУПИТЬ
                     .intro__sertificate.sertificate.wow.slideInLeft(data-wow-duration=".5s" data-wow-delay=".1s")
                         img(src="/static/images/content/intro/cards.png", alt="").sertificate__img

@@ -58,7 +58,7 @@
                     margin-right 12rem
 
 .rules
-    padding 3.7rem 9rem 0 8rem
+    padding 3.7rem 9rem 05rem 8rem
     position relative
 
     & > *
@@ -73,40 +73,40 @@
             &:not(:last-child)
                 margin-bottom 6rem
         
-    #rules-line 
-        fill:none;
-        stroke:#FFFFFF;
-        stroke-width:3;
-        stroke-miterlimit:10;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width 13.4rem
+    // #rules-line 
+    //     fill:none;
+    //     stroke:#FFFFFF;
+    //     stroke-width:3;
+    //     stroke-miterlimit:10;
+    //     position: absolute;
+    //     left: 0;
+    //     top: 0;
+    //     width 13.4rem
 
-        @media(max-width $grid-xl-max)
-            width 12.5rem
+    //     @media(max-width $grid-xl-max)
+    //         width 12.5rem
 
-        @media(max-width $grid-sm-max)
-            width 12.8rem
+    //     @media(max-width $grid-sm-max)
+    //         width 12.8rem
 
-    &__mask
-        z-index 1
-        position: absolute;
-        height: 400px
-        left: 7rem;
-        top: 9rem;
-        width 13.4rem
-        display none
+    // &__mask
+    //     z-index 1
+    //     position: absolute;
+    //     height: 400px
+    //     left: 7rem;
+    //     top: 9rem;
+    //     width 13.4rem
+    //     display none
 
-        @media(max-width $grid-xl-max)
-            height: 380px
-            left 6rem
-        @media(max-width $grid-sm-max)
-            left 5.8rem   
-            height: 250px
-        @media(max-width $grid-xs-max)
-            left 6rem
-            height: 140px
+    //     @media(max-width $grid-xl-max)
+    //         height: 380px
+    //         left 6rem
+    //     @media(max-width $grid-sm-max)
+    //         left 5.8rem   
+    //         height: 250px
+    //     @media(max-width $grid-xs-max)
+    //         left 6rem
+    //         height: 140px
 
     
 @keyframes pulsing1{
@@ -115,7 +115,7 @@
         // transition transform .2s linear
     }
     50% {
-        transform: scale(1.1)
+        transform: scale(1.2)
         // transition transform .2s linear
     }
     100% {
@@ -129,7 +129,7 @@
         // transition transform .2s linear
     }
     50% {
-        transform: scale(1.1)
+        transform: scale(1.2)
         // transition transform .2s linear
     }
     100% {
@@ -143,7 +143,7 @@
         // transition transform .2s linear
     }
     50% {
-        transform: scale(1.1)
+        transform: scale(1.2)
         // transition transform .2s linear
     }
     100% {
@@ -163,15 +163,15 @@
         &:not(:last-child)
             margin-right 3rem
 
-    &:nth-child(1)
-        .rule__img
-            animation: pulsing1 .6s linear 2s 1 normal
-    &:nth-child(2)
-        .rule__img
-            animation: pulsing2 .6s linear 4s 1 normal    
-    &:nth-child(3)
-        .rule__img
-            animation: pulsing3 .6s linear 7s 1 normal    
+    // &:nth-child(1)
+    //     .rule__img
+    //         animation: pulsing1 .6s linear 2s 1 normal
+    // &:nth-child(2)
+    //     .rule__img
+    //         animation: pulsing2 .6s linear 3s 1 normal    
+    // &:nth-child(3)
+    //     .rule__img
+    //         animation: pulsing3 .6s linear 4s 1 normal    
 
     &__img
         min-width 9.4rem 
@@ -203,6 +203,7 @@
         flex-direction column
         align-items center
         position relative
+        transition all  linear .2s
 
         &:not(:last-child)
             margin-bottom 3.2rem
@@ -244,12 +245,24 @@
         padding 1.8rem 3.7rem
         border-radius 8rem
         cursor pointer
-        // --file
+    
+    &__input--submit[disabled]
+        opacity 0.5
+        &:hover
+            transform none
+    
+    &__file-return:not(:empty)
+        margin 1rem 0 -2rem
+        text-align center 
+        font-size 1.7rem
+        transition all linear .2s
 
     &__rules
         color $black
         font-size 1.6rem   
         text-align center 
+        display block
+        margin 0 auto
 
         &-link
             color $black
@@ -259,8 +272,3 @@
     @media(min-width $grid-xl)
         padding 6rem 6.8rem 6rem
         justify-content space-between
-        
-.reg-form
-    &:not(.access)
-        .reg-form__input--submit
-            opacity 0.5

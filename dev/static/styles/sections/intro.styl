@@ -19,6 +19,9 @@
         position relative
         z-index 2
 
+        @media(max-width $grid-xs-max)
+            padding 0 4vw
+
         &:after
             background-image url(../images/content/intro/title-bg.png)
             background-size contain
@@ -33,15 +36,17 @@
             width 200%
             z-index -2
         
-        &:before
-            bottom 2.5rem
-            content ''
-            z-index -1
-            position absolute
-            left 0
+        &-img
             width 100%
-            height .3rem
-            background-image: linear-gradient(to right, #c95c79, #c05a61, #b45a4d, #a45c3c, #925d2f, #926232, #916635, #916b38, #a37647, #b58057, #c78b67, #d89778)
+        // &:before
+        //     bottom 2.5rem
+        //     content ''
+        //     z-index -1
+        //     position absolute
+        //     left 0
+        //     width 100%
+        //     height .3rem
+        //     background-image: linear-gradient(to right, #c95c79, #c05a61, #b45a4d, #a45c3c, #925d2f, #926232, #916635, #916b38, #a37647, #b58057, #c78b67, #d89778)
     
     
     &__subtitle
@@ -83,6 +88,11 @@
         padding 0 2.7rem 0 1.7rem
         position relative
         margin-bottom 3rem
+
+        &-link
+            transition transform linear .2s
+            &:hover
+                transform scale(1.05)
 
         &-img
             width 100%
