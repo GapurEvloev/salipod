@@ -91,27 +91,34 @@
 
         &-link
             transition transform linear .2s
+            position relative
             &:hover
                 transform scale(1.05)
 
         &-img
             width 100%
+            max-width 330px
     
     &__btn
         position absolute
         bottom 0
+        font-family "Gotham Pro"
+        left 50%
+        transform translateX(-50%        екфтыащкь екфтыдфеуЧ(-50:)
+)
+
         
     @media(min-width $grid-lg)
         &__btn
             bottom 2%
     @media(min-width $grid-xxl)
         .container--intro
-            max-width 100%
-            padding 0
-            margin 0 7.5rem
-            width auto
+            // max-width 100%
+            // padding 0
+            // margin 0 7.5rem
+            // width auto
             display flex
-            justify-content center
+            justify-content flex-start
         
         &__head
             padding-top 0
@@ -119,17 +126,24 @@
             flex-direction column
             margin 0 auto
             text-align left
-            padding-left 10%
+            padding-left 20%
         
         &__title
             font-size 10.4rem
+            margin-bottom 2rem
+
+            &-img
+                max-width 87.3rem
         
         &__subtitle
-            width 70rem
-       
+            max-width 85rem
+            font-size 4.3rem
+            padding-left 3rem
+            
         &__cnt
-            margin 8rem auto 24rem
-            padding-right 12%
+            width 100%
+            margin 6rem auto 15rem
+            padding-left 15%
         
         &__girl
             background-image: url('../images/content/intro/girl.png')!important
@@ -140,13 +154,15 @@
             flex 0 0 auto
             display flex
             flex-direction row-reverse
+            margin-right auto
+            
         
         &__product
             padding 0
             position absolute
             z-index 5
             right 7.5rem
-            top 10rem
+            top 20rem
         
         // &__btn
         //     position relative
@@ -181,14 +197,15 @@
     @media(min-width $grid-xl)
         &__img
             margin-bottom 7rem
-   
+
     @media(min-width $grid-xxl)
-        flex-direction row
+        width 100%
         align-items center
 
         &__img
-            margin-bottom 0
+            margin-bottom 8rem
 
         &__text
-            width 32rem
+            width auto
             padding-bottom 0
+            color #84163b
