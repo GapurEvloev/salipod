@@ -11,10 +11,12 @@
     
     &-item
         margin-top 5rem 
-        flex 0 0 calc(50% - 2rem)
+        flex 0 0 calc(50% - 3rem)
+        margin-right 5rem
 
-        &:nth-child(odd)
-            margin-right 4rem
+        &:nth-child(2n),
+        &:last-child
+            margin-right 0
 
         &__img
             display block
@@ -26,16 +28,24 @@
         &__descr
             font-size 2.5rem
     
-    @media(min-width $grid-xxl)
-        padding-top 11rem
+    @media(min-width $grid-lg)
+        padding-top 5.73vw
         
         &__wrap
             justify-content space-between
 
         &-item
-            flex 0 0 29%
-            margin-top 8rem
+            flex 0 0 22.03vw
+            max-width 22.03vw
+            margin-top 4.17vw
+
+            &__img
+                margin-bottom 1.04vw
+                width 18.11vw
+            
+            &__descr
+                font-size 1.3vw
 
             &:not(:last-child)
-                margin-right 5.3rem
+                margin-right 2.76vw
                 margin-left 0

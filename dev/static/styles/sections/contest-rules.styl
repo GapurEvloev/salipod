@@ -3,7 +3,6 @@
 
 .contest-rules
     z-index 1
-    // background-image linear-gradient(to bottom, #d2c4c8, #d5c7cc)
     position relative
     padding-bottom 6rem
 
@@ -35,80 +34,45 @@
             z-index -1
             border-radius 20px
     
-    @media(min-width $grid-xxl)
-        padding-bottom 11.5rem
+    @media(min-width $grid-lg)
+        padding-bottom 6.1vw
 
         &__wrap
-            margin 0 -6.5rem   
+            margin 0 -6vw   
             flex-direction row
             justify-content center
 
-            & > * 
-                flex 0 0 calc(50% - 6.5rem)
-                max-width: calc(50% - 6.5rem)
+            & > *
                 &:not(:last-child)
-                    margin-right 3%
                     margin-bottom 0
-    
-    @media(min-width 1700px)
-        &__wrap
-            margin 0 -12.5rem
-            & > * 
-                flex 0 0 calc(50% - 6.5rem) 
-                max-width: calc(50% - 6.5rem)
-                &:not(:last-child)
-                    margin-right 12rem
+
+        &__col
+            flex 0 0 calc(50% - 3.39vw)
+            max-width: calc(50% - 3.39vw)
+            margin-right: 6.61vw
+            margin-bottom: 2.76vw
+
+            &:last-child
+                margin-right 0
+                margin-bottom 0
 
 .rules
-    padding 3.7rem 9rem 05rem 8rem
+    padding 3.7rem 6rem 05rem 8rem
     position relative
 
-    & > *
-        &:not(:last-child)
-            margin-bottom 5rem
+    .rule
+        margin-bottom 5rem
+        &:last-child
+            margin-bottom 0
         
-    @media(min-width $grid-xxl)
-        padding-left 9rem
-        padding-right 19rem
+    @media(min-width $grid-lg)
+        padding 2.3vw 7.09vw 2.6vw 4.17vw
 
-        & > *
-            &:not(:last-child)
-                margin-bottom 6rem
-        
-    // #rules-line 
-    //     fill:none;
-    //     stroke:#FFFFFF;
-    //     stroke-width:3;
-    //     stroke-miterlimit:10;
-    //     position: absolute;
-    //     left: 0;
-    //     top: 0;
-    //     width 13.4rem
+        .rule
+            margin-bottom 3.13vw
+            &:last-child
+                margin-bottom 0
 
-    //     @media(max-width $grid-xl-max)
-    //         width 12.5rem
-
-    //     @media(max-width $grid-sm-max)
-    //         width 12.8rem
-
-    // &__mask
-    //     z-index 1
-    //     position: absolute;
-    //     height: 400px
-    //     left: 7rem;
-    //     top: 9rem;
-    //     width 13.4rem
-    //     display none
-
-    //     @media(max-width $grid-xl-max)
-    //         height: 380px
-    //         left 6rem
-    //     @media(max-width $grid-sm-max)
-    //         left 5.8rem   
-    //         height: 250px
-    //     @media(max-width $grid-xs-max)
-    //         left 6rem
-    //         height: 140px
 
     
 @keyframes pulsing1{
@@ -163,17 +127,7 @@
 
     & > *
         &:not(:last-child)
-            margin-right 3rem
-
-    // &:nth-child(1)
-    //     .rule__img
-    //         animation: pulsing1 .6s linear 2s 1 normal
-    // &:nth-child(2)
-    //     .rule__img
-    //         animation: pulsing2 .6s linear 3s 1 normal    
-    // &:nth-child(3)
-    //     .rule__img
-    //         animation: pulsing3 .6s linear 4s 1 normal    
+            margin-right 3rem 
 
     &__img
         min-width 38px
@@ -182,12 +136,12 @@
         // animation: pulsing1 1s linear 2s 1 normal
         
         @media(min-width $grid-sm)
-            min-width 66px
-            height 79px
-
-        @media(min-width $grid-md)
             min-width 94px
             height 113px
+
+        @media(min-width $grid-lg)
+            min-width 5.83vw
+            height 6.82vw
     
     &__descr
         font-size 2.8rem
@@ -201,8 +155,12 @@
             height 2.7rem
             display block
         
-    @media(min-width $grid-xl)
-        // 
+        @media(min-width $grid-lg)
+            font-size 1.46vw
+
+            &-icon
+                height 1.61vw
+                width 8.54vw
 
 .reg-form
     padding 5.8rem 5.2rem 4.8rem
@@ -281,6 +239,28 @@
             text-decoration underline
     
         
-    @media(min-width $grid-xl)
-        padding 6rem 6.8rem 6rem
+    @media(min-width $grid-lg)
+        padding 3.65vw 3.54vw 3.65vw
         justify-content space-between
+
+        &__group
+            &:not(:last-child)
+                margin-bottom 1.67vw
+
+        &__input
+            font-size 1.46vw
+            padding 1.2vw
+            border-radius 0.31vw
+
+        &__input--submit,
+        &__label
+            font-size 1.35vw
+            padding 1.3vw 1.93vw 1.15vw
+            border-radius 4.17vw
+
+        &__file-return:not(:empty)
+            margin 0.52vw 0 -1.04vw
+            font-size 0.89vw
+
+        &__rules
+            font-size 0.83vw

@@ -6,8 +6,11 @@
         font-size 1.5rem
         text-align center
     
-    @media(min-width $grid-xxl)
-        padding-bottom 6.5rem
+    @media(min-width $grid-lg)
+        padding-bottom 3.39vw
+
+        .copyright
+            font-size 0.78vw
 
 .socials
     display flex
@@ -37,3 +40,27 @@
             &-vk
                 height 2.9rem
                 width 5.1rem
+
+    @media(min-width $grid-lg)
+        padding 1.56vw 0 2.86vw
+
+        &__link
+            padding 0 2.08vw
+
+        &__icon
+            width 2.97vw
+            height 2.66vw
+            fill $btn-bg
+
+            &.icon
+                &-fb
+                    width 1.04vw
+                    height 2.19vw
+                &-tw
+                    width 2.6vw
+                    height 2.03vw
+                &-ok
+                    width 1.56vw
+                &-vk
+                    height 1.51vw
+                    width 2.66vw

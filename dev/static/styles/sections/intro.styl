@@ -1,7 +1,7 @@
 .intro
     position relative
     z-index 1
-    max-width 1920px
+    max-width 100%
     margin 0 auto
 
     &__head
@@ -38,15 +38,6 @@
         
         &-img
             width 100%
-        // &:before
-        //     bottom 2.5rem
-        //     content ''
-        //     z-index -1
-        //     position absolute
-        //     left 0
-        //     width 100%
-        //     height .3rem
-        //     background-image: linear-gradient(to right, #c95c79, #c05a61, #b45a4d, #a45c3c, #925d2f, #926232, #916635, #916b38, #a37647, #b58057, #c78b67, #d89778)
     
     
     &__subtitle
@@ -113,66 +104,46 @@
 
         
     @media(min-width $grid-lg)
-        &__btn
-            bottom 2%
-    @media(min-width $grid-xxl)
         .container--intro
-            // max-width 100%
-            // padding 0
-            // margin 0 7.5rem
-            // width auto
-            display flex
-            justify-content flex-start
-        
+            max-width 100%
+            padding 0
+
         &__head
-            padding-top 0
-            display inline-flex
-            flex-direction column
-            margin 0 auto
-            text-align left
-            padding-left 20%
+            padding 0
+            width 45.47vw
+            margin-left 32.92vw
         
         &__title
-            font-size 10.4rem
-            margin-bottom 2rem
-
-            &-img
-                max-width 87.3rem
+            width 45.47vw
+            height 8.44vw
+            margin-bottom 1.98vw
         
         &__subtitle
-            max-width 85rem
-            font-size 4.3rem
-            padding-left 3rem
-            
-        &__cnt
-            width 100%
-            margin 6rem auto 15rem
-            padding-left 15%
+            width 45.47vw
+            text-align left
+            font-size 2.28vw
+            padding-left 1.72vw
         
         &__girl
             background-image: url('../images/content/intro/girl.png')!important
-            height calc(100% + 12rem)
-            top -8.6rem
-        
+            height calc(100% + 8.4vw)
+            top -5.21vw
+            background-position: -1vw -5px, bottom center;
+
         &__offer
-            flex 0 0 auto
-            display flex
-            flex-direction row-reverse
-            margin-right auto
-            
+            width 45.47vw
+            margin 0 auto
+            margin-left 32.92vw
+            padding 4.69vw 0
         
         &__product
-            padding 0
             position absolute
-            z-index 5
-            right 7.5rem
-            top 20rem
-        
-        // &__btn
-        //     position relative
-        //     z-index 3
-        
-        
+            right 2.44vw
+            top 10.5vw
+
+            &-img
+                width 17.19vw
+
 
 .sertificate
     display flex
@@ -191,25 +162,31 @@
             margin-bottom 7rem
     
     &__text
-        font-size 3.7rem
+        font-size 3.3rem
         font-weight bold
         text-align center
         line-height 1.2
         padding-left 1rem
         padding-bottom 3.2rem
+        color #84163b
             
-    @media(min-width $grid-xl)
+    @media(min-width $grid-lg)
         &__img
-            margin-bottom 7rem
-
-    @media(min-width $grid-xxl)
-        width 100%
-        align-items center
-
-        &__img
-            margin-bottom 8rem
+            margin-bottom 3.65vw
+            width 13.33vw
 
         &__text
-            width auto
-            padding-bottom 0
-            color #84163b
+            padding-bottom 4vw
+            font-size 1.93vw
+
+    // @media(min-width $grid-xxl)
+    //     width 100%
+    //     align-items center
+
+    //     &__img
+    //         margin-bottom 8rem
+
+    //     &__text
+    //         width auto
+    //         padding-bottom 0
+    //         color #84163b

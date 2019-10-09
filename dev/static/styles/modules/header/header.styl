@@ -1,5 +1,4 @@
 .header
-    // background-image: linear-gradient(to top, #dca7b5, #deaab7, #e0adba, #e2b0bc, #e4b3bf)
     background-image: url(../images/general/mobile-intro-bg.jpg)
     background-size auto 101% 
     padding 3.6rem 0 0
@@ -16,16 +15,40 @@
         &-img
             height 6rem
             width auto
-    
-    @media(min-width $grid-xl)
-        padding 3.9rem 0 0
 
-        &__logo
-            &--womansday
-                .header__logo-img
-                    height 3.7rem
-    
-    @media(min-width $grid-xl)
+    @media(min-width $grid-lg)
+        padding 1.88vw 0 1vw
+        margin-bottom 1vw
+
         &__logos
-            margin-right 6.7rem
-            margin-left 3.6rem
+            margin 0 3.6vw 0 2rem
+        
+        &__logo
+            display inline-block
+            &--womansday
+                height 1.93vw
+                width 11.15vw
+                
+
+            &--salipod
+                margin-left: auto
+                
+                // height 2.45vw
+                width 14.15vw
+
+            &-img
+                width 100%
+                height 100%
+    
+    // @media(min-width $grid-xl)
+    //     padding 3.9rem 0 0
+
+    //     &__logo
+    //         &--womansday
+    //             .header__logo-img
+    //                 height 3.7rem
+    
+    // @media(min-width $grid-xl)
+    //     &__logos
+    //         margin-right 6.7rem
+    //         margin-left 3.6rem
