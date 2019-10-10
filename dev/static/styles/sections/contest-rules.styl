@@ -41,13 +41,16 @@
             margin 0 -6vw   
             flex-direction row
             justify-content center
+            flex-direction: row
 
             & > *
                 &:not(:last-child)
                     margin-bottom 0
 
         &__col
+            flex 1 1 50%
             flex 0 0 calc(50% - 3.39vw)
+            max-width: 46.5%  
             max-width: calc(50% - 3.39vw)
             margin-right: 6.61vw
             margin-bottom: 2.76vw
@@ -151,6 +154,8 @@
         padding-top 1rem
         flex auto
         max-width 100%
+        flex-basis 100%
+        display inline-block
 
         &-icon
             height 2.7rem

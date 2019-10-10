@@ -1,8 +1,17 @@
 section.section.section--video
     .video
-        a(href="static/video/salipod.mp4").video__link
-            picture
-                source(srcset="static/video/salipod-prev.webp" type="image/webp" width="100%")
-                img(src="static/video/salipod-prev.gif" alt="").video__media
+        a(data-fancybox href="#modalVideo").video__link.video__link--desktop4
             button.video__button(type="button" aria-label="Запустить видео")
                 img.video__button-icon(src="static/images/content/video/play.svg", alt="Запустить видео")
+            <video width="100%" height="auto" preload="auto" autoplay="true" loop="true" muted="muted" id="previewVideo">
+                <source src="static/video/preview.mp4" type="video/mp4">
+                <source src="static/video/preview.webm" type="video/webm">
+                <source src="static/video/preview.ogv" type="video/ogg">
+                |Your browser doesn't support HTML5 video tag.
+            </video>
+        <video width="100%" height="auto" controls  id="modalVideo" style='display:none'>
+            <source src="static/video/salipod.mp4" type="video/mp4">
+            <source src="static/video/salipod.webm" type="video/webm">
+            <source src="static/video/salipod.ogv" type="video/ogg">
+            |Your browser doesn't support HTML5 video tag.
+        </video>
