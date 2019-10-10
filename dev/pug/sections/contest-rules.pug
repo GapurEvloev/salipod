@@ -12,14 +12,9 @@ section.section.section--contest-rules.wow.slideInLeft(data-wow-duration=".5s" d
                     .rule.wow.fadeInLeft(data-wow-duration="1s" data-wow-delay="2s")
                         img.rule__img(src="static/images/content/contest-rules/3.svg", alt="")
                         .rule__descr Каждый 7-ой участник получает сертификат Ozon на&nbsp;1000 рублей
-                    //- .rules__mask
-                    //-     <svg version="1.1" id="rules-line" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 130 380" style="enable-background:new 0 0 130 380;" xml:space="preserve">
-                    //-         //- 
-                    //-         <path class="rules-line__path" d="M62.6,2c-79.3,61.2-84.2,125.4,4.8,190.1c82.3,52,78.1,114.2,5.8,185.9"/>
-                    //-     </svg>
                     
 
-                form(action="").contest-rules__col.reg-form
+                form#form.contest-rules__col.reg-form
                     .reg-form__group
                         input(type="text" placeholder="Имя" name="firstname").reg-form__input#inputName
                     .reg-form__group
@@ -28,6 +23,8 @@ section.section.section--contest-rules.wow.slideInLeft(data-wow-duration=".5s" d
                         input(type="file" name="file")#file.reg-form__input.reg-form__input--file
                         label(for="file").btn.reg-form__label.reg-form__label--file загрузить фото чека
                         span.reg-form__file-return
+                    #result_form
+                    #success
                     .reg-form__group
                         input(type="submit" value="Отправить")#reg-btn.btn.reg-form__input.reg-form__input--submit
                     span.reg-form__rules Учавствуя в конкусе, вы соглашаетесь с&nbsp;#[a.reg-form__rules-link(href="#") правилами конкурса]
